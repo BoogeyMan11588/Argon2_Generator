@@ -40,8 +40,9 @@ if st.button("Generate Hash's 🚀"):
             st.write("Hashed Username:", uhash)
             st.write("Hashed Password:", phash)
 
-            # Fireworks animation after hashing
-            st.balloons()  # This is the built-in Streamlit fireworks effect
+            with st.spinner('Wait for it...'):
+                time.sleep(5)
+            st.success("Done!")
 
         except Exception as e:
             st.error(f"Error during hashing: {e}")

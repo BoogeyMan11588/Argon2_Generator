@@ -40,9 +40,9 @@ if st.button("Generate Hash's 🚀"):
             st.write("Hashed Username:", uhash)
             st.write("Hashed Password:", phash)
 
-            with st.spinner('Wait for it...'):
-                time.sleep(5)
-            st.success("Done!")
+            with st.spinner('Verifying...'):
+                time.sleep(1)
+            st.success("O.K!")
 
         except Exception as e:
             st.error(f"Error during hashing: {e}")
